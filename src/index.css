@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-to-r {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right,  #53F541,#F700C6); /* Adjust gradient colors */
+  animation: gradient 3s ease infinite;
+}
+.font-base {
+  font-family: "Anonymous Pro", serif;
+}
